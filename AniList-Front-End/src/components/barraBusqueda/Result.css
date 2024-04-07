@@ -1,0 +1,47 @@
+
+/* EFECTOS PARA CADA RESULTADO DE  LA LISTA RESULTADOS*/
+:root{
+    --color-text-light: 114,138,161;
+    --color-text: 159,173,189;
+}
+.result:first-of-type {
+    padding-top: 15px;
+    border-radius: 4px 4px 0 0;
+}
+.result{
+    padding: 10px 20px;
+    font-weight: 600
+}
+
+.result:hover{
+    background-color: #efefef;
+}
+
+.search-result{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 40px auto;
+    text-decoration: none;
+}
+
+.search-result img{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+    width: 40px;
+}
+.search-result .name{
+    color: rgb(var(--color-text));
+    padding: 0 10px;
+}
+
+.name .info{
+    color: rgb(var(--color-text-light));
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding-top: 3px;
+}

@@ -1,0 +1,26 @@
+.search-bar{
+    top: 18px;
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 300px;
+    height: 2.5rem;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 1.25rem;
+}   
+
+/*
+input:focus nos sirve para poder quitar el borde de linea que se pone al darle click al input
+*/
+input:focus{
+    outline: none;
+}

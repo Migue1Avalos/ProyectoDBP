@@ -1,0 +1,169 @@
+:root{
+  --color-gray-700: 116,136,153;
+  --color-gray-800: 100,115,128;
+  --color-background-200: 237,241,245;
+  --color-background-300: 30,42,56;
+  --color-shadow-blue: 0,5,15;
+}
+.ListAnime_Section{
+  padding: 0 100px;
+}
+/* Title de cada seccion*/
+.ListAnime_Section .title{
+  color: rgb(var(--color-gray-800));
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+.ActivityAnimeList{
+  overflow-x: auto;
+  display: flex;
+  padding-top: 1%;
+  gap: 15px;
+  max-width: 100%;
+  overflow: hidden; 
+  scroll-behavior: smooth; 
+  margin-bottom: 60px;
+}
+
+.AnimeActivity{
+  display: inline-block;
+  flex: 0 0 auto; 
+  width: 200px; 
+  height: auto;
+  position: relative; /* Añade posición relativa */
+
+}
+
+.anime-image2{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* Estilo para el título */
+.anime-title2 {
+  color: rgb(var(--color-gray-700));
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 10px;
+  overflow: hidden;
+  transition: color .2s ease;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  width: 90%;
+}
+
+.cover2{
+  background: rgba(var(--color-background-300),.8);
+  box-shadow: 0 14px 30px rgba(var(--color-shadow-blue),.15),0 4px 4px rgba(var(--color-shadow-blue),.05);
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  border-radius: 5px;
+  width: 90%;
+  z-index: 5;
+}
+.cover2::before{
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  padding-bottom: 142.85714%;
+}
+
+.anime-image2{
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s ease-in-out;
+  width: 100%;
+}
+
+.anime-image2:hover {
+  transform: scale(1.1);
+}
+
+  /* Configuracion para el recuadro al desplazar el mouse sobre una imagen del contenedor de Animes*/
+  .hover-data-right {
+      left: 100%;
+      margin-left: 10px;
+      background: rgb(var(--color-background-100));
+      border-radius: 6px;
+      opacity: 0;
+      padding: 18px;
+      pointer-events: none;
+      position: absolute;
+      top: 5px;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 160px;
+      transition: left 0.3s, opacity 0.3s;
+      z-index: 10;
+    }
+    
+    /* Agrega un z-index superior al hover-data-right para que esté por encima del margen */
+  .AnimeActivity:hover .hover-data-right {
+    opacity: 1;
+    z-index: 10; /* Asegura que esté en una capa superior */
+      
+  }
+
+  .genres{
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      height: 30px;
+      overflow: hidden;
+      margin-top: 22px;
+  }
+  
+  .genere{
+      background: var(--media-background);
+      border-radius: 10px;
+      color: var(--media-background-text);
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      height: 20px;
+      line-height: 1.2rem;
+      margin-right: 5px;
+      margin-block: 10px;
+      padding: 0 12px;
+      text-transform: lowercase;
+  }
+  
+  .score{
+      display: grid;
+      grid-template-columns: 20px 10px;
+      font-weight: 600;
+      gap: 3px;
+      align-items: center;
+      color: rgb(var(--color-gray-800));
+      font-size: 1.2rem;
+      padding-top: 12px;
+  }
+  
+  .score .iconImage{
+      height: 1.4em;
+  }
+  
+  .score .percentage{
+      padding-left: 5px;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
